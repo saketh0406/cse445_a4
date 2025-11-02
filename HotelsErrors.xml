@@ -2,7 +2,6 @@
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
-  <!-- ❌ Root element should be Hotels, not Hotel -->
   <Hotel _Rating="4.5">
     <Name>Westin Tempe</Name>
     <Phone>480-968-8885</Phone>
@@ -15,7 +14,6 @@
     </Address>
   </Hotel>
 
-  <!-- ❌ Missing required Address Number attribute -->
   <Hotel _Rating="4.0">
     <Name>Hyatt Place Downtown</Name>
     <Phone>602-456-1234</Phone>
@@ -28,7 +26,6 @@
     </Address>
   </Hotel>
 
-  <!-- ❌ Missing one Phone element -->
   <Hotel _Rating="3.8">
     <Name>Holiday Inn Express</Name>
     <Address Number="450">
@@ -40,7 +37,6 @@
     </Address>
   </Hotel>
 
-  <!-- ❌ Unclosed Address tag -->
   <Hotel _Rating="4.2">
     <Name>Hilton Garden Inn</Name>
     <Phone>480-333-5000</Phone>
@@ -50,10 +46,8 @@
       <State>AZ</State>
       <Zip>85251</Zip>
       <NearestAirport>Sky Harbor</NearestAirport>
-    <!-- Missing </Address> closing tag -->
   </Hotel>
 
-  <!-- ❌ Two Name elements -->
   <Hotel _Rating="4.1">
     <Name>Moxy Hotel</Name>
     <Name>Duplicate Name</Name>
@@ -68,3 +62,4 @@
   </Hotel>
 
 </Hotel>
+
